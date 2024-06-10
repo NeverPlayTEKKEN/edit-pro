@@ -18,7 +18,7 @@ const Header = () => {
                 <Image src="/sample_logo.jpg" layout="fill" objectFit="contain"/>
             </div>
             <div class="h-full w-full flex justify-center items-center"></div>
-            <div class="hidden md:visible mr-8 h-full md:flex items-center justify-end ">
+            <div class="hidden md:visible mr-8 xl:mr-12 h-full md:flex items-center justify-end ">
                 <HeaderLink text="Home" jptext="ホーム"/>
                 <HeaderLink text="Service" jptext="サービス"/>
                 <HeaderLink text="Work" jptext="ワーク"/>

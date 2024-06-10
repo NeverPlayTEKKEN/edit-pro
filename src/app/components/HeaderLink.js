@@ -3,7 +3,7 @@
 const HeaderLink = (props) => {
 
     return (
-        <div class="w-16 m-1 hover:text-orange-500">
+        <div class="w-16 m-3 xl:m-6 hover:text-orange-500">
             <button
                 onClick={props.onClick}
                 class="w-full text-xl hover:underline"
