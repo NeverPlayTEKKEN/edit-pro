@@ -10,11 +10,11 @@ const Home = () => {
       <div class="relative grid grid-cols-4 md:grid-cols-12 mt-5">
         <div class="relative col-span-6 m-4 h-fill flex items-center justify-center">
           <Image src="/background.png" width={900} height={636} objectFit="contain"/>
-          <div class="absolute bg-black w-[500px] h-[300px] text-red-500">sample movie</div>
+          <div class="absolute bg-black w-1/2 h-1/2 text-red-500">sample movie</div>
         </div>
         <div class="col-span-6 md:order-first m-2 p-5 h-fill flex justify-center items-center">
           <div>
-            <p class="text-5xl m-5">This is Sample</p>
+            <p class="text-5xl mb-5 mx-5">This is Sample</p>
             <div class="m-5">
               <p>これは説明です。</p>
               <p>大体こんな感じで説明を挿入します。</p>

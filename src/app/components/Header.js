@@ -18,11 +18,11 @@ const Header = () => {
                 <Image src="/sample_logo.jpg" layout="fill" objectFit="contain"/>
             </div>
             <div class="h-full w-full flex justify-center items-center"></div>
-            <div class="hidden md:visible mr-5 h-full md:flex items-center justify-end ">
-                <HeaderLink text="Home"/>
-                <HeaderLink text="Service" />
-                <HeaderLink text="Work" />
-                <HeaderLink text="Contact" onClick={onClickContact}/>
+            <div class="hidden md:visible mr-8 h-full md:flex items-center justify-end ">
+                <HeaderLink text="Home" jptext="ホーム"/>
+                <HeaderLink text="Service" jptext="サービス"/>
+                <HeaderLink text="Work" jptext="ワーク"/>
+                <HeaderLink text="Contact" jptext="コンタクト" onClick={onClickContact}/>
             </div>
             <div class="visible md:hidden aspect-square h-full border flex items-center justify-center">
             </div>
