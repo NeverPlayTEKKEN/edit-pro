@@ -3,14 +3,13 @@
 const HeaderLink = (props) => {
 
     return (
-        <div class="w-16 m-3 xl:m-6 hover:text-orange-500">
+        <div class="mx-1 xl:m-6 hover:text-orange-500">
             <button
                 onClick={props.onClick}
-                class="w-full text-xl hover:underline"
+                class="w-full text-xs hover:underline rounded-sm bg-gray-100 p-1"
             >
                 {props.text}
             </button>
-            <div class="w-full text-xs flex justify-center">{props.jptext}</div>
         </div>
     )
 }
