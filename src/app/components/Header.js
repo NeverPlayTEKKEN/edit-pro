@@ -13,7 +13,7 @@ const Header = () => {
 
     return (
         <div class="w-full">
-            <div class="h-12 w-full flex justify-start items-center p-2">
+            <div class="h-12 md:h-16 w-full flex justify-start items-center p-2">
                 <div class="aspect-square h-full relative flex justify-start items-center">
                     <Image src="/sample_logo.jpg" layout="fill" objectFit="contain"/>
                 </div>
@@ -22,7 +22,7 @@ const Header = () => {
                     <div class="relative h-full aspect-square"><Image src="/coconara.png" fill objectFit="contain" /></div>
                 </div>
             </div>
-            <div class="xl:mr-12 h-8 flex items-end justify-end">
+            <div class="xl:mr-12 h-8 md:h-12 w-full flex items-end md:items-center justify-end md:justify-center">
                 <HeaderLink text="Home" jptext="ホーム"/>
                 <HeaderLink text="Service" jptext="サービス"/>
                 <HeaderLink text="Work" jptext="ワーク"/>

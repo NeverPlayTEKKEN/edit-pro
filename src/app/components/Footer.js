@@ -13,7 +13,7 @@ const Footer = () => {
                     <div>コンテンツ</div>
                 </div>
                 <div class="col-span-2 m-2 flex flex-col justify-center items-center">
-                    <div class="text-xl">aaaaaaa@aaaaaaaa.com</div>
+                    <div class="text-md">aaaaaaa@aaaaaaaa.com</div>
                     <div>
                         <div>X（旧twitter）</div>
                         <div>ココナラ</div>
