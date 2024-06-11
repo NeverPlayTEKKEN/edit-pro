@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const OneMovie = (props) => {
     return (
-        <div class="mb-8">
+        <div class="mb-4">
             <div class="h-56 mt-1 relative">
                 <Image src={props.image_src} fill />
             </div>
