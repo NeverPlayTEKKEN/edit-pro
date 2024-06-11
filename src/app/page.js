@@ -3,6 +3,7 @@
 import Header from "./components/Header";
 import OneMovie from "./components/OneMovie";
 import PlanBox from "./components/PlanBox";
+import Footer from "./components/Footer";
 
 const Home = () => {
   return (
@@ -16,7 +17,7 @@ const Home = () => {
       />
       <div class="mx-2 flex justify-start items-center">
         <div class="h-[10px] w-[10px] mx-2 bg-red-600">　</div>
-        <div>Plan</div>
+        <div class="text-xl">Plan</div>
       </div>
       <div class="grid grid-cols-3 mb-12">
         <PlanBox description="梅のプランです"/>
@@ -28,6 +29,7 @@ const Home = () => {
         tittle="二枚目の画像です"
         description="説明します"
       />
+      <Footer />
     </div>
   )
 }

@@ -13,7 +13,7 @@ const Header = () => {
 
     return (
         <div class="w-full">
-            <div class="h-8 w-full flex justify-start items-center">
+            <div class="h-12 w-full flex justify-start items-center p-2">
                 <div class="aspect-square h-full relative flex justify-start items-center">
                     <Image src="/sample_logo.jpg" layout="fill" objectFit="contain"/>
                 </div>
