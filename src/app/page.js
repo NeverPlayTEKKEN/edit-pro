@@ -1,26 +1,32 @@
 'use client'
 
 import Header from "./components/Header";
-import Image from "next/image";
+import OneMovie from "./components/OneMovie";
+import PlanBox from "./components/PlanBox";
 
 const Home = () => {
   return (
     <div>
       <Header />
-      <div class="h-64 mt-2 relative">
-        <Image src='/background.png' fill />
+      <div class="flex-grow" />
+      <OneMovie
+        image_src = '/background.png'
+        tittle = "This is Sample"
+        description = {[<div class="flex justify-center">これはサンプルです</div>, <div class="flex justify-center">これはサンプルですテスト</div>]}
+      />
+      <OneMovie
+        image_src = '/background.png'
+        tittle="二枚目の画像です"
+        description="説明します"
+      />
+      <div class="mt-8 mx-2 flex justify-start items-center">
+        <div class="h-[10px] w-[10px] mx-2 bg-red-600">　</div>
+        <div>Plan</div>
       </div>
-      <div class="flex">
-        <div class="aspect-square border h-12"></div>
-        <div class="border w-full flex justify-center items-center text-2xl">This is Sample</div>
-        <div class="aspect-square h-12"></div>
-      </div>
-      <div class="m-2 h-16 rounded-md bg-gray-200 flex items-center text-xs">
-        <div>
-          <p>ここにサービスの説明を記入します。</p>
-          <p>大体3行くらいを想定しています。</p>
-          <p>どんなことを書くかはまた考えます。</p>
-        </div>
+      <div class="grid grid-cols-3">
+        <PlanBox description="梅のプランです"/>
+        <PlanBox description="竹のプランです"/>
+        <PlanBox description="松のプランです"/>
       </div>
     </div>
   )
