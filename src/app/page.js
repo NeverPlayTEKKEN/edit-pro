@@ -13,8 +13,8 @@ const Home = () => {
       <div class="flex-grow" />
       <OneMovie
         image_src = '/background.png'
-        tittle = "This is Sample"
-        description = {[<div class="flex justify-center">これはサンプルです</div>, <div class="flex justify-center">これはサンプルですテスト</div>]}
+        tittle = "その瞬間を逃しません"
+        description = {[<div class="flex justify-center">配信者人生で最高の瞬間はいつですか？</div>, <div class="flex justify-center"></div>]}
       />
       <FadeIn>
       <div class="mx-2 md:mt-16 flex justify-start items-center">
