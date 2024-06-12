@@ -7,8 +7,20 @@ import { useRouter } from 'next/navigation'
 const Header = () => {
     const router = useRouter()
 
-    const onClickContact = () => {
-        router.push('/Contact')
+    const onClickHome = () => {
+        router.push('/..')
+    }
+
+    const onClickService = () => {
+        router.push('/Service')
+    }
+
+    const onClickWork = () => {
+        router.push('/Work')
+    }
+
+    const onClickAbout = () => {
+        router.push('/About')
     }
 
     return (
@@ -23,10 +35,10 @@ const Header = () => {
                 </div>
             </div>
             <div class="xl:mr-12 h-8 md:h-10 w-full flex items-end md:items-center justify-end md:justify-center">
-                <HeaderLink text="Home" jptext="ホーム"/>
-                <HeaderLink text="Service" jptext="サービス"/>
-                <HeaderLink text="Work" jptext="ワーク"/>
-                <HeaderLink text="About" jptext="アバウト" onClick={onClickContact}/>
+                <HeaderLink text="Home" jptext="ホーム" onClick={onClickHome}/>
+                <HeaderLink text="Service" jptext="サービス" onClick={onClickService}/>
+                <HeaderLink text="Work" jptext="ワーク" onClick={onClickWork}/>
+                <HeaderLink text="About" jptext="アバウト" onClick={onClickAbout}/>
             </div>
         </div>
     )

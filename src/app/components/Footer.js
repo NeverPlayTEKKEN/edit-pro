@@ -13,7 +13,7 @@ const Footer = () => {
                     <div class="hover:text-blue-700 hover:underline">アバウト</div>
                 </div>
                 <div class="col-span-2 m-2 flex flex-col justify-center items-center">
-                    <div class="text-md">aaaaaaa@aaaaaaaa.com</div>
+                    <div class="text-md xl:text-xl">aaaaaaa@aaaaaaaa.com</div>
                     <div>
                         <div class="hover:text-blue-700 hover:underline">X（旧twitter）</div>
                         <div class="hover:text-blue-700 hover:underline">ココナラ</div>

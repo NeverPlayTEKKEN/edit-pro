@@ -1,8 +1,10 @@
 'use client'
 import Image from "next/image";
+import { FadeIn } from "./FadeIn";
 
 const OneMovie = (props) => {
     return (
+        <FadeIn>
         <div class="mb-4 md:flex">
             <div class="relative md:w-full mt-1 md:order-last">
                 <Image src={props.image_src} width={960} height={636} objectFit="contain"/>
@@ -14,6 +16,7 @@ const OneMovie = (props) => {
                 </div>
             </div>
         </div>
+        </FadeIn>
     )
 }
 
