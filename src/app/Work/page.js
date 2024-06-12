@@ -7,6 +7,12 @@ const Work = () => {
     return (
         <div>
             <Header />
+            <div class="grid grid-cols-4">
+                <div class="grid-items m-2"></div>
+                <div class="grid-items m-2"></div>
+                <div class="grid-items m-2"></div>
+                <div class="grid-items m-2"></div>
+            </div>
             <Footer />
         </div>
     )
