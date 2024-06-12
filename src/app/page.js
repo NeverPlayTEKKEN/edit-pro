@@ -17,7 +17,7 @@ const Home = () => {
       />
       <div class="mx-2 flex justify-start items-center">
         <div class="h-[10px] w-[10px] mx-2 bg-red-600">　</div>
-        <div class="text-xl">Plan</div>
+        <div class="text-xl md:text-2xl">Plan</div>
       </div>
       <div class="grid grid-cols-3 mb-12">
         <PlanBox description="梅のプランです"/>
