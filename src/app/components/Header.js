@@ -24,7 +24,7 @@ const Header = () => {
     }
 
     return (
-        <div class="w-full sticky top-0 md:mb-2 md:shadow bg-white">
+        <div class="w-full sticky top-0 md:mb-2 md:shadow bg-white z-50">
             <div class="h-12 md:h-16 w-full flex justify-start items-center p-2">
                 <div class="aspect-square h-full relative flex justify-start items-center">
                     <Image src="/sample_logo.jpg" layout="fill" objectFit="contain"/>
