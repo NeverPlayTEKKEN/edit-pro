@@ -13,7 +13,7 @@ const Home = () => {
       <div>
         <OneMovie
           image_src = '/background.png'
-          tittle = "７文字がベスト"
+          tittle = {["ちょっとだけおもしろいあなたに"]}
           description = {[<div class="flex justify-center">１７文字で改行されるので注意が必要</div>, <div class="flex justify-center"></div>]}
         />
         <FadeIn>
