@@ -11,7 +11,7 @@ const OneMovie = (props) => {
             </div>
             <div class="md:flex md:flex-col md:justify-center md:col-span-4">
                 <div class="mt-1 md:m-5 flex md:flex-col justify-center items-center text-xl md:text-3xl xl:text-5xl">{props.tittle}</div>
-                <div class="mx-2 flex justify-center items-center text-sm md:text-base xl:text-xl">
+                <div class="mx-2 flex justify-center items-center text-sm xl:text-xl">
                     <div>{props.description}</div>
                 </div>
             </div>
