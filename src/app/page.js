@@ -28,7 +28,7 @@ const Home = () => {
             <PlanBox description="松のプランです"/>
           </div>
 
-          <div class="mx-2 mt-2 mb-8 md:mb-16 flex justify-center text-sm md:text-base">
+          <div class="mx-2 mt-2 mb-8 md:mb-16 flex justify-center text-sm md:text-base xl:text-xl">
             <div>
               <div class="w-fit">・３つのプランからお選びいただけます。</div>
               <div class="w-fit">・記載のプラン以外も相談可能。</div>
