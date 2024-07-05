@@ -6,7 +6,7 @@ const PlanBox = (props) => {
     return (
         <div class="h-32 md:h-64 mx-2 rounded-md bg-gray-200">
             <div class="relative h-full w-full flex items-end">
-                {/*<Image src="/background.png" fill/>*/}
+                {/*<Image src="/bg2.png" fill/>*/}
                 <div class="absolute buttom-0 left-0 right-0 text-sm flex justify-center">{props.description}</div>
             </div>
             

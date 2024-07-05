@@ -9,17 +9,17 @@ const Service = () => {
         <div>
             <Header />
             <OneMovie
-                image_src = '/background.png'
+                image_src = '/bg2.png'
                 tittle = "松のプラン"
                 description = {[<div class="flex justify-center">１７文字で改行されるので注意が必要</div>, <div class="flex justify-center"></div>]}
             />
             <OneMovie
-                image_src = '/background.png'
+                image_src = '/bg2.png'
                 tittle = "竹のプラン"
                 description = {[<div class="flex justify-center">１７文字で改行されるので注意が必要</div>, <div class="flex justify-center"></div>]}
             />
             <OneMovie
-                image_src = '/background.png'
+                image_src = '/bg2.png'
                 tittle = "梅のプラン"
                 description = {[<div class="flex justify-center">１７文字で改行されるので注意が必要</div>, <div class="flex justify-center"></div>]}
             />
