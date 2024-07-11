@@ -13,7 +13,7 @@ const Home = () => {
       <div>
         <OneMovie
           image_src = '/bg2.png'
-          tittle = {[<div>ちょっとだけ、</div>, <div>おもしろい</div>, <div>あなたに</div>]}
+          tittle = {[<div class="md:pl-4">ちょっとだけ、</div>, <div>おもしろい</div>, <div>あなたに</div>]}
           description = {[<div class="flex justify-center">いつもおもしろくはいられないから</div>, <div class="flex justify-center">あなたが輝いた瞬間を切り抜きます</div>]}
         />
         <FadeIn>
@@ -28,11 +28,11 @@ const Home = () => {
             <PlanBox description="松のプランです"/>
           </div>
 
-          <div class="mx-2 mt-2 mb-8 md:mb-16 flex justify-center text-sm md:text-base xl:text-xl">
+          <div class="mx-4 md:mx-64 mt-2 mb-8 md:mb-16 flex justify-center text-sm md:text-base xl:text-xl  border-b-4 border-gray-100">
             <div>
               <div class="w-fit">・３つのプランからお選びいただけます。</div>
               <div class="w-fit">・記載のプラン以外も相談可能。</div>
-              <div class="w-fit border-b-2 border-gray-400">・お客様の満足のため全力疾走します！</div>
+              <div class="w-fit">・お客様の満足のため全力疾走します！</div>
             </div>
           </div>
           
