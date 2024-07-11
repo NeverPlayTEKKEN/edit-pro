@@ -7,7 +7,7 @@ const OneMovie = (props) => {
         
         <div class="md:grid md:grid-cols-12 mb-8">
             
-            <div class="relative md:col-span-8 mt-1 md:order-last">
+            <div class="relative md:col-span-8 md:mt-1 md:order-last">
                 <FadeIn>
                     <Image src={props.image_src} width={1920} height={1080} objectFit="contain"/>
                 </FadeIn>

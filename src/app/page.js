@@ -13,7 +13,7 @@ const Home = () => {
       <div>
         <OneMovie
           image_src = '/bg2.png'
-          tittle = {[<div>ちょっとだけ</div>, <div>おもしろい</div>, <div>あなたに</div>]}
+          tittle = {[<div>ちょっとだけ、</div>, <div>おもしろい</div>, <div>あなたに</div>]}
           description = {[<div class="flex justify-center">いつもおもしろくはいられないから</div>, <div class="flex justify-center">あなたが輝いた瞬間を切り抜きます</div>]}
         />
         <FadeIn>
