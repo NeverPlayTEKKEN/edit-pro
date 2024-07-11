@@ -28,11 +28,11 @@ const Home = () => {
             <PlanBox description="松のプランです"/>
           </div>
 
-          <div class="mx-4 md:mx-64 mt-2 mb-8 md:mb-16 flex justify-center text-sm md:text-base xl:text-xl  border-b-4 border-gray-100">
+          <div class="mx-4 mt-2 mb-8 md:mb-16 flex justify-center text-sm md:text-base xl:text-xl  border-b-4 border-gray-100 md:border-none">
             <div>
               <div class="w-fit">・３つのプランからお選びいただけます。</div>
               <div class="w-fit">・記載のプラン以外も相談可能。</div>
-              <div class="w-fit">・お客様の満足のため全力疾走します！</div>
+              <div class="w-fit md:border-b-4 border-gray-100">・お客様の満足のため全力疾走します！</div>
             </div>
           </div>
           
