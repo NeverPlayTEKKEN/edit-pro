@@ -15,7 +15,7 @@ const OneMovie = (props) => {
                 <FadeIn>
                 <div class="mt-1 md:m-5 flex md:flex-col justify-center items-center text-xl md:text-3xl xl:text-5xl">{props.tittle}</div>
                 <div class="mx-2 flex justify-center items-center text-sm xl:text-xl">
-                    <div>{props.description}</div>
+                    <div class="xl:border-b-2 border-gray-400">{props.description}</div>
                 </div>
                 </FadeIn>
             </div>

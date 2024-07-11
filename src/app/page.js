@@ -32,7 +32,7 @@ const Home = () => {
             <div>
               <div class="w-fit">・３つのプランからお選びいただけます。</div>
               <div class="w-fit">・記載のプラン以外も相談可能。</div>
-              <div class="w-fit">・お客様の満足のため全力疾走します！</div>
+              <div class="w-fit border-b-2 border-gray-400">・お客様の満足のため全力疾走します！</div>
             </div>
           </div>
           
