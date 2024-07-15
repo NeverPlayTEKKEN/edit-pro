@@ -9,7 +9,7 @@ const Contact = () => {
         <div>
             <Header />
             <OneMovie
-                image_src = '/about.jpg'
+                image_src = '/me.webp'
                 tittle = "私はこんな人"
                 description = {[<div class="flex justify-center">１７文字で改行されるので注意が必要</div>, <div class="flex justify-center"></div>]}
             />

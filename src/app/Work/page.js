@@ -7,6 +7,7 @@ const Work = () => {
     return (
         <div>
             <Header />
+            ここにはこれまでの作品を埋め込みます。
             <Footer />
         </div>
     )
