@@ -13,8 +13,8 @@ const Footer = () => {
                     <Link href="/About"><div class="text-blue-700 hover:text-black underline cursor-pointer">アバウト</div></Link>
                 </div>
                 <div class="col-span-2 m-2 flex flex-col justify-center items-center">
-                    <div>aaaaaaa@aaaaaaaa.com</div>
-                    <div class="text-blue-700 hover:text-black underline cursor-pointer">X（旧twitter）</div>
+                    <div class="font-bold">cliprizeinfo@gmail.com</div>
+                    <a href="https://x.com/clip_rize" target="_blank" rel="noopener noreferrer" class="text-blue-700 hover:text-black underline cursor-pointer">X（旧twitter）</a>
                     <div class="text-blue-700 hover:text-black underline cursor-pointer">ココナラ</div>
                 </div>
             </div>

@@ -31,7 +31,7 @@ const Header = () => {
                 </div>
                 <div class="hidden md:inline text-2xl font-bold text-gray-600">ClipRize</div>
                 <div class="w-full h-full flex justify-end">
-                    <div class="relative h-full aspect-square cursor-pointer"><a href="https://www.google.com" target="_blank" rel="noopener noreferrer"><Image src="/x.png" fill objectFit="contain" /></a></div>
+                    <div class="relative h-full aspect-square cursor-pointer"><a href="https://x.com/clip_rize" target="_blank" rel="noopener noreferrer"><Image src="/x.png" fill objectFit="contain" /></a></div>
                     <div class="relative h-full aspect-square cursor-pointer"><a href="https://www.yahoo.co.jp/" target="_blank" rel="noopener noreferrer"><Image src="/coconara.png" fill objectFit="contain" /></a></div>
                 </div>
             </div>
