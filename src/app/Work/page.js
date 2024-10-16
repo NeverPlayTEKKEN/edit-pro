@@ -9,7 +9,7 @@ const Work = () => {
         <div>
             <Header />
             <div class="m-2 md:text-xl">これまでに作成した動画です。</div>
-            <div class="md:grid md:grid-cols-3 md:gap-1">
+            <div class="md:grid md:grid-cols-4 md:gap-1">
                 <div class="mb-6">
                     <YouTubeEmbed videoid="95FCtaFu67o"/>
                     【鉄拳8】日本トップレベルの吉光対決がヤバすぎる
@@ -22,9 +22,6 @@ const Work = () => {
                     <YouTubeEmbed videoid="uRBmrmF6zA0"/>
                     【喧嘩】今回のDJ社長と銀太の件で今までのレペゼンの裏側を暴露してしまうチバニャン
                 </div>
-                
-            </div>
-            <div class="md:grid md:grid-cols-3 md:gap-1">
                 <div class="mb-6">
                     <YouTubeEmbed videoid="5KobGtroZmE"/>
                     【ふぉい謝罪】ハイパーゲーム大会中にコレだけはするなとプロゲーマに釘刺されるも●●の許可が出されるふぉい 【関優太 ふぉい切り抜き RAMU おにや まさのり】
