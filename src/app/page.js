@@ -45,6 +45,7 @@ const Home = () => {
             <Image src="/plan.png" width={1920} height={1080} objectFit="contain" />
           </div>
 
+
           <div class="mx-4 mt-2 mb-8 md:mb-16 flex justify-center text-sm md:text-base xl:text-xl  border-b-4 border-gray-100 md:border-none">
             <div>
               <div class="w-fit">・３つのプランからお選びいただけます。</div>
