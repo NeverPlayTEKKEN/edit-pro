@@ -42,7 +42,7 @@ const Home = () => {
           </div>
       
           <div class="md:mx-4 relative text-center">
-            <Image src="/plan.png" width={1920} height={1080} objectFit="contain" />
+            <Image src="/plan.PNG" width={1920} height={1080} objectFit="contain" />
           </div>
 
 
