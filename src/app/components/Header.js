@@ -35,7 +35,7 @@ const Header = () => {
                     <div class="relative h-full aspect-square cursor-pointer"><a href="https://www.yahoo.co.jp/" target="_blank" rel="noopener noreferrer"><Image src="/coconara.png" fill objectFit="contain" /></a></div>
                 </div>
             </div>
-            <div class="xl:mr-12 h-8 md:h-10 w-full flex items-end md:items-center justify-end md:justify-center">
+            <div class="xl:mr-12 h-8 md:h-10 w-full flex items-end md:items-center justify-end md:justify-center md:hidden">
                 <HeaderLink text="Home" jptext="ホーム" onClick={onClickHome}/>
                 <HeaderLink text="Service" jptext="サービス" onClick={onClickService}/>
                 <HeaderLink text="Work" jptext="ワーク" onClick={onClickWork}/>
