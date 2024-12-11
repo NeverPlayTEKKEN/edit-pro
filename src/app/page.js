@@ -1,11 +1,10 @@
 import Header from "./components/Header";
 import OneMovie from "./components/OneMovie";
-import PlanBox from "./components/PlanBox";
 import Footer from "./components/Footer";
 import { FadeIn, FedIn } from './components/FadeIn'
 import { client } from '../../libs/microcms'
 
-const Home = () => {
+export default function Home() {
 
   
   return (
@@ -77,8 +76,6 @@ const Home = () => {
   )
 }
 
-export default Home;
-
 async function getPricePosts() {
   const data = await client.get({
     endpoint: 'price', // 'blog'はmicroCMSのエンドポイント名
@@ -91,6 +88,37 @@ async function getPricePosts() {
     },
   });
   return data.contents;
+}
+
+export async function Plans() {
+  const posts = await getPricePosts();
+  posts.sort((a, b) => a.plan_id - b.plan_id)
+  
+  return (
+    <ul className="md:grid md:grid-cols-3">
+      {posts.map((post, index) => {
+        if(index >= 3){
+          return
+        }else{
+          return(
+            <li>
+              <h3 className={StyleDecede(post).header}>
+                {post.plan_name}
+              </h3>
+              <div className={StyleDecede(post).body}>
+                <p className={StyleDecede(post).price}>
+                  ￥{post.month_price}
+                </p>
+                <p><span>ショート動画：</span><span className={StyleDecede(post).text}>{post.short_amount}本</span></p>
+                <p><span>フル動画：</span><span className={StyleDecede(post).text}>{post.long_amount}本</span></p>
+                <p><span>納期：</span><span className={StyleDecede(post).text}>{post.deadline}</span></p>
+              </div>
+            </li>
+          )
+        }
+      })}
+    </ul>
+  )
 }
 
 function StyleDecede(post) {
@@ -127,37 +155,4 @@ function StyleDecede(post) {
   styles.price = price_style
   styles.text = text_style
   return styles
-}
-
-export async function Plans() {
-  const posts = await getPricePosts();
-  posts.sort((a, b) => a.plan_id - b.plan_id)
-  
-
-
-  return (
-    <ul className="md:grid md:grid-cols-3">
-      {posts.map((post, index) => {
-        if(index >= 3){
-          return
-        }else{
-          return(
-            <li>
-              <h3 className={StyleDecede(post).header}>
-                {post.plan_name}
-              </h3>
-              <div className={StyleDecede(post).body}>
-                <p className={StyleDecede(post).price}>
-                  ￥{post.month_price}
-                </p>
-                <p><span>ショート動画：</span><span className={StyleDecede(post).text}>{post.short_amount}本</span></p>
-                <p><span>フル動画：</span><span className={StyleDecede(post).text}>{post.long_amount}本</span></p>
-                <p><span>納期：</span><span className={StyleDecede(post).text}>{post.deadline}</span></p>
-              </div>
-            </li>
-          )
-        }
-      })}
-    </ul>
-  )
 }
