@@ -35,10 +35,10 @@ async function getPricePosts() {
     posts.sort((a, b) => a.plan_id - b.plan_id)
     
     return (
-      <ul className="md:w-3/5 w-full mx-2 md:mx-0 md:mt-10 md:mb-5 text-center">
+      <ul className="md:w-3/5 w-full px-2 md:mx-0 md:mt-10 mb-2 md:mb-5 text-center">
         {posts.map((post, index) => {
             return(
-              <li key={index} className="md:mb-8">
+              <li key={index} className="md:mb-8 mb-2">
                 <h3 className={StyleDecede(post).header}>
                   {post.plan_name}
                 </h3>
