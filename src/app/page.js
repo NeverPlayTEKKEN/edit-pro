@@ -90,7 +90,7 @@ async function getPricePosts() {
   return data.contents;
 }
 
-export async function Plans() {
+async function Plans() {
   const posts = await getPricePosts();
   posts.sort((a, b) => a.plan_id - b.plan_id)
   
