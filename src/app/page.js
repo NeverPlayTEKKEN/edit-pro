@@ -79,9 +79,6 @@ export default function Home() {
 async function getPricePosts() {
   const data = await client.get({
     endpoint: 'price', // 'blog'はmicroCMSのエンドポイント名
-    customRequestInit: {
-      cache: "no-store",
-    },
     queries: {
       fields: 'plan_id,plan_name,description,month_price,short_amount,long_amount,deadline,color',  // idとtitleを取得
       limit: 5,  // 最新の5件を取得
