@@ -40,7 +40,7 @@ export default function Home() {
             <div class="text-md md:text-2xl xl:text-4xl">Plan</div>
           </div>
       
-          <div class="md:mx-4 relative text-center">
+          <div class="md:mx-4 mx-2 relative text-center">
             <Plans />
           </div>
 
@@ -98,7 +98,7 @@ async function Plans() {
           return
         }else{
           return(
-            <li>
+            <li key={"key" + index}>
               <h3 className={StyleDecede(post).header}>
                 {post.plan_name}
               </h3>

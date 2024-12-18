@@ -35,7 +35,7 @@ async function getPricePosts() {
     posts.sort((a, b) => a.plan_id - b.plan_id)
     
     return (
-      <ul className="md:w-3/5 md:mt-10 md:mb-5 text-center">
+      <ul className="md:w-3/5 w-full mx-2 md:mx-0 md:mt-10 md:mb-5 text-center">
         {posts.map((post, index) => {
             return(
               <li key={index} className="md:mb-8">
