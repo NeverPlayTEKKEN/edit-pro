@@ -6,7 +6,7 @@ const Header = () => {
     return (
         <>
         <div className={`
-            top-0 z-50 sticky items-center 
+            top-0 z-40 sticky items-center 
             w-full h-8 bg-white
             md:h-10 sm:shadow-lg grid grid-cols-12
             lg:h-16

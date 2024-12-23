@@ -2,6 +2,7 @@ import Header from "./components/Header";
 import OneMovie from "./components/OneMovie";
 import Footer from "./components/Footer";
 import HeroImage from "./components/HeroImage"
+import Anime from "./components/Anime"
 import { FadeIn } from './components/FadeIn'
 import { client } from '../../libs/microcms'
 import Image from "next/image";
@@ -11,7 +12,9 @@ import Link from "next/link";
 export default function Home() {
 
   return (
+
     <body>
+      <Anime />
       <Header />
       <HeroImage />
       <Sectino1 />
