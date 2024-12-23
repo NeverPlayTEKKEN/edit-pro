@@ -1,55 +1,68 @@
-'use client'
-
-import HeaderLink from "./HeaderLink";
 import Image from 'next/image'
-import { useRouter } from 'next/navigation'
+import Link from 'next/link'
 
 const Header = () => {
-    const router = useRouter()
-
-    const onClickHome = () => {
-        router.push('/..')
-    }
-
-    const onClickService = () => {
-        router.push('/Service')
-    }
-
-    const onClickWork = () => {
-        router.push('/Work')
-    }
-
-    const onClickAbout = () => {
-        router.push('/About')
-    }
 
     return (
-        <div class="w-full sticky top-0 md:mb-2 md:shadow bg-white z-50">
-            <div class="h-12 md:h-16 w-full flex justify-start items-center p-2">
-                <div class="aspect-square h-full relative flex justify-start items-center">
-                    <Image src="/logo.png" layout="fill" objectFit="contain"/>
-                </div>
-                <div class="hidden md:inline md:ml-2 text-2xl font-bold text-gray-600">ClipRize</div>
-                
-                <div class="w-full h-full flex justify-end items-center">
-                    <div class="xl:mr-12 md:h-10 w-fit md:items-center md:justify-center hidden md:flex">
-                        <HeaderLink text="Home" jptext="ホーム" onClick={onClickHome}/>
-                        <HeaderLink text="Service" jptext="サービス" onClick={onClickService}/>
-                        <HeaderLink text="Work" jptext="ワーク" onClick={onClickWork}/>
-                        <HeaderLink text="About" jptext="アバウト" onClick={onClickAbout}/>
-                    </div>
-                    <div class="relative h-full aspect-square cursor-pointer"><a href="https://x.com/clip_rize" target="_blank" rel="noopener noreferrer"><Image src="/x.png" fill objectFit="contain" /></a></div>
-                    <div class="relative h-full aspect-square cursor-pointer"><a href="https://www.yahoo.co.jp/" target="_blank" rel="noopener noreferrer"><Image src="/coconara.png" fill objectFit="contain" /></a></div>
-                </div>
-                
+        <>
+        <div className={`
+            top-0 z-50 sticky items-center 
+            w-full h-8 bg-white
+            md:h-10 sm:shadow-lg grid grid-cols-12
+            lg:h-16
+            `}
+        >
+            <div className="sm:col-span-6"></div>
+            <HeaderLink text="Home" />
+            <HeaderLink text="Service" />
+            <HeaderLink text="Work" />
+            <HeaderLink text="About" />
+            <div class="relative h-full cursor-pointer md:m-1 lg:m-2 xl:m-6 col-start-11">
+                <a href="https://x.com/clip_rize" target="_blank" rel="noopener noreferrer">
+                    <Image src="/x.png" fill objectFit="contain" />
+                </a>
             </div>
-            <div class="xl:mr-12 h-8 md:h-10 w-full flex items-end md:items-center justify-end md:justify-center md:hidden">
-                <HeaderLink text="Home" jptext="ホーム" onClick={onClickHome}/>
-                <HeaderLink text="Service" jptext="サービス" onClick={onClickService}/>
-                <HeaderLink text="Work" jptext="ワーク" onClick={onClickWork}/>
-                <HeaderLink text="About" jptext="アバウト" onClick={onClickAbout}/>
+            <div class="relative h-full cursor-pointer md:m-1 lg:m-2 xl:m-6">
+                <a href="https://x.com/clip_rize" target="_blank" rel="noopener noreferrer">
+                    <Image src="/coconara.png" fill objectFit="contain" />
+                </a>
             </div>
         </div>
+        <HeaderBottum />
+        </>
+    )
+}
+
+const HeaderLink = (props) => {
+    let link = props.text
+    if(props.text == "Home"){
+        link = ""
+    }
+    return (
+        <Link
+            href={"./" + link}
+            className={`
+                w-full h-full items-center justify-center transaction-colors duration-300
+                text-sm hidden
+                sm:flex
+                md:text-sm 
+                lg:text-xl
+                xl:text-2xl
+                hover:bg-red-400
+
+            `}
+        >{props.text}</Link>
+    )
+}
+
+const HeaderBottum = () => {
+    return (
+        <ul className='sm:hidden flex text-sm justify-end'>
+            <li className='mx-1 px-1 bg-gray-100 rounded'><Link href="./">Home</Link></li>
+            <li className='mx-1 px-1 bg-gray-100 rounded'><Link href="./Service">Service</Link></li>
+            <li className='mx-1 px-1 bg-gray-100 rounded'><Link href="./Work">Work</Link></li>
+            <li className='mx-1 px-1 bg-gray-100 rounded'><Link href="./About">About</Link></li>
+        </ul>
     )
 }
 

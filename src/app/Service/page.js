@@ -2,18 +2,19 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import OneMovie from "../components/OneMovie";
 import { client } from '../../../libs/microcms';
+import { FadeIn } from "../components/FadeIn";
 
 
 const Service = () => {
     return (
         <div>
             <Header />
-            <div className="flex flex-col items-center"><Plans /></div>
+            <main className="mx-4 mt-2 md:mt-3 xl:mt-4">
+            <h2 className="text-center md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl md:mb-1 xl:mb-2 text-red-400 font-bold">◆Service</h2>
+              <Plans />
+            </main>
             
-            <div class="text-sm text-center font-bold mb-6">
-                <p>各種プランは1,000~5,000円にてお急ぎ対応できます。</p>
-                <p>下記メールアドレスまでお気軽にご相談ください！</p>
-            </div>
+            <p className="mt-4 text-sm sm:text-xs md:text-sm xl:text-base 2xl:text-lg text-center font-bold">各種プランは1,000~5,000円にて<br/>お急ぎ対応できます。<br/>下記メールアドレスまでお気軽にご相談ください！</p>
             <Footer />
         </div>
     )
@@ -24,7 +25,7 @@ async function getPricePosts() {
       endpoint: 'price', // 'blog'はmicroCMSのエンドポイント名
       queries: {
         fields: 'plan_id,plan_name,description,month_price,short_amount,long_amount,deadline,color',  // idとtitleを取得
-        limit: 5,  // 最新の5件を取得
+        limit: 10,  // 最新の5件を取得
       },
     });
     return data.contents;
@@ -33,12 +34,17 @@ async function getPricePosts() {
   async function Plans() {
     const posts = await getPricePosts();
     posts.sort((a, b) => a.plan_id - b.plan_id)
+
+    const p_style = `
+      text-sm md:text-base lg:text-lg xl:text-sl 2xl:text-2xl
+      pb-1 xl:pb-2
+    `
     
     return (
-      <ul className="md:w-3/5 w-full px-2 md:mx-0 md:mt-10 mb-2 md:mb-5 text-center">
+      <ul className="grid grid-cols-12 gap-4">
         {posts.map((post, index) => {
             return(
-              <li key={index} className="md:mb-8 mb-2">
+              <li key={index} className="text-center col-start-2 col-span-10 sm:col-span-4 sm:col-start-auto">
                 <h3 className={StyleDecede(post).header}>
                   {post.plan_name}
                 </h3>
@@ -46,12 +52,12 @@ async function getPricePosts() {
                   <p className={StyleDecede(post).price}>
                     ￥{post.month_price}
                   </p>
-                  <p><span>ショート動画：</span><span className={StyleDecede(post).text}>{post.short_amount}本</span></p>
-                  <p><span>フル動画：</span><span className={StyleDecede(post).text}>{post.long_amount}本</span></p>
-                  <p><span>納期：</span><span className={StyleDecede(post).text}>{post.deadline}</span></p>
-                  <br/>
-                  <div>{post.description.split("\n").map(des => {return(<p>{des}</p>)})}</div>
+                  <p className={p_style}><span>ショート動画：</span><span className={StyleDecede(post).text}>{post.short_amount}本</span></p>
+                  <p className={p_style}><span>フル動画：</span><span className={StyleDecede(post).text}>{post.long_amount}本</span></p>
+                  <p className={p_style}><span>納期：</span><span className={StyleDecede(post).text}>{post.deadline}</span></p>
+                  
                 </div>
+                <FadeIn><div className="text-sm sm:text-xs md:text-sm xl:text-base 2xl:text-lg mb-4">{post.description.split("\n").map(des => {return(<p>{des}</p>)})}</div></FadeIn>
               </li>
             )
         })}
