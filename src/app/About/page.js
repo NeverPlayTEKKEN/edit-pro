@@ -39,7 +39,7 @@ const Contact = () => {
                     <p><strong>ともにこの配信者大戦国時代を勝ち抜きましょう！</strong></p>
         </FadeIn>
       </div>
-      <div className="order-first sm:order-last flex col-start-4 col-span-7 sm:col-span-5 justify-center items-center md:p-2 lg:p-4 xl:p-6 2xl:p-8"><Image src="/Me.png" width={755} height={658} /></div>
+      <div className="order-first sm:order-last flex col-start-4 col-span-7 sm:col-span-5 justify-center items-center md:p-2 lg:p-4 xl:p-6 2xl:p-8"><Image src="/ME.png" width={755} height={658} /></div>
     </section>
             <Footer />
         </div>
