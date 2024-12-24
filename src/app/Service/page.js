@@ -14,7 +14,7 @@ const Service = () => {
               <Plans />
             </main>
             
-            <p className="mt-4 text-sm sm:text-xs md:text-sm xl:text-base 2xl:text-lg text-center font-bold">各種プランは1,000~5,000円にて<br/>お急ぎ対応できます。<br/>下記メールアドレスまでお気軽にご相談ください！</p>
+            <p className="mt-4 text-sm sm:text-xs md:text-sm xl:text-base 2xl:text-lg text-center font-bold">適宜その時の案件の数にもよりますが<br/>ショート1本5000円<br/>下記メールアドレスまでお気軽にご相談ください！<br/>都度相談になりますが最短1日〜一週間以内の納品になります。</p>
             <Footer />
         </div>
     )
