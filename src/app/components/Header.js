@@ -8,11 +8,12 @@ const Header = () => {
         <div className={`
             top-0 z-40 sticky items-center 
             w-full h-8 bg-white
-            md:h-10 sm:shadow-lg grid grid-cols-12
+            md:h-10 sm:shadow-lg grid grid-cols-12 gap-4
             lg:h-16
             `}
         >
-            <div className="sm:col-span-6"></div>
+            <div className="col-start-1 relative w-full h-full"><Image src="/cliprize.png" fill objectFit="contain" /></div>
+            <Link href="./" className="col-start-2 col-span-5 lg:text-xl xl:text-2xl font-bold">ClipRize</Link>
             <HeaderLink text="Home" />
             <HeaderLink text="Service" />
             <HeaderLink text="Work" />
