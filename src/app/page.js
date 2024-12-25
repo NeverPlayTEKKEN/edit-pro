@@ -13,27 +13,45 @@ export default function Home() {
 
   return (
 
-    <body>
-      <Anime />
+    <div>
       <Header />
       <HeroImage />
+      <News />
       <Sectino1 />
       <Plans />
       <Section2 />
       <Footer />
-    </body>
+    </div>
   )
 }
 
+async function getNewsPosts() {
+  const data = await client.get({
+    endpoint: 'news', // 'blog'はmicroCMSのエンドポイント名
+    queries: {
+      fields: 'id,tittle',  // idとtitleを取得
+      limit: 3,  // 最新の10件を取得
+    },
+    customRequestInit: {
+      cache: "no-store", // キャッシュを利用せずに常に新しいデータを取得する
+     },
+  });
+  return data.contents;
+}
 
 
-const News = () => {
+const News = async () => {
+  const posts = await getNewsPosts();
   return (
     <section className="mt-4 md:mt-8 lg:mt-12 xl:mt-16 2xl:mt-20">
-      <h3 className="text-center md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl text-red-400 font-bold">◆News</h3>
+      <h3 className="text-center md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl text-red-400 font-bold">News</h3>
       <ul className={`
-        bg-red-100 p-2
-      `}></ul>
+        bg-red-100 p-2 md:p-4 xl:p-6
+      `}>
+        {posts.map((post, index) => {
+          return <li className="text-center text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl py-1 lg:py-2"><Link href={`/News/${post.id}`} className="hover:border-b-2 border-black border-b sm:border-b-0">{post.tittle}</Link></li>
+        })}
+      </ul>
     </section>
   )
 }
@@ -128,7 +146,7 @@ async function Plans() {
   
   return (
     <section className="sm:px-4 mt-4 md:mt-8 lg:mt-12 xl:mt-16 2xl:mt-20">
-      <h3 className="text-center md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl text-red-400 font-bold">◆Plan</h3>
+      <h3 className="text-center md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl text-red-400 font-bold">Plan</h3>
       <ul className="grid grid-cols-12 gap-4">
         {posts.map((post, index) => {
           if(index >= 3){

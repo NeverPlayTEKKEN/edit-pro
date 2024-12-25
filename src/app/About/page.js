@@ -10,7 +10,7 @@ const Contact = () => {
     return (
         <div>
             <Header />
-            <h2 className="mt-2 md:mt-3 xl:mt-4 text-center md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl md:mb-1 xl:mb-2 text-red-400 font-bold">◆About Me</h2>
+            <h2 className="mt-2 md:mt-3 xl:mt-4 text-center md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl md:mb-1 xl:mb-2 text-red-400 font-bold">About Me</h2>
             <section className={`
     grid grid-cols-12 gap-4 sm:px-4 sm:py-4 lg:py-8 xl:py-12 2xl:py-16
     `}>

@@ -7,7 +7,7 @@ const Work = () => {
     return (
         <div>
             <Header />
-            <h2 className="mt-2 md:mt-3 xl:mt-4 text-center md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl md:mb-1 xl:mb-2 text-red-400 font-bold">◆Work</h2>
+            <h2 className="mt-2 md:mt-3 xl:mt-4 text-center md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl md:mb-1 xl:mb-2 text-red-400 font-bold">Work</h2>
             <Works />
             <Footer />
         </div>

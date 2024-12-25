@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Footer = () => {
     return (
-        <div class="bg-gray-200 w-full flex flex-col items-start">
+        <div class="bg-gray-200 w-full flex flex-col items-start sticky top-[100vh]">
             <div class="text-sm md:text-xl grid grid-cols-3 w-full">
                 <div class="flex flex-col items-start m-2 md:ml-8">
                     <Link href="/"><div class="text-blue-700 hover:text-black underline cursor-pointer">ホーム</div></Link>

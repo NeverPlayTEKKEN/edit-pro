@@ -6,14 +6,14 @@ const Header = () => {
     return (
         <>
         <div className={`
-            top-0 z-40 sticky items-center 
-            w-full h-8 bg-white
-            md:h-10 sm:shadow-lg grid grid-cols-12 gap-4
-            lg:h-16
+            top-0 z-40 sticky w-full
             `}
         >
+            <div className='w-full h-8 bg-white
+            md:h-10 sm:shadow-lg grid grid-cols-12 gap-4 px-4 items-center
+            lg:h-16'>
             <div className="col-start-1 relative w-full h-full"><Image src="/cliprize.png" fill objectFit="contain" /></div>
-            <Link href="./" className="col-start-2 col-span-5 lg:text-xl xl:text-2xl font-bold">ClipRize</Link>
+            <Link href="/" className="col-start-2 col-span-5 lg:text-xl xl:text-2xl font-bold">ClipRize</Link>
             <HeaderLink text="Home" />
             <HeaderLink text="Service" />
             <HeaderLink text="Work" />
@@ -30,6 +30,8 @@ const Header = () => {
             </div>
         </div>
         <HeaderBottum />
+        </div>
+        
         </>
     )
 }
@@ -41,7 +43,7 @@ const HeaderLink = (props) => {
     }
     return (
         <Link
-            href={"./" + link}
+            href={"/" + link}
             className={`
                 w-full h-full items-center justify-center transaction-colors duration-300
                 text-sm hidden
@@ -58,11 +60,11 @@ const HeaderLink = (props) => {
 
 const HeaderBottum = () => {
     return (
-        <ul className='sm:hidden flex text-sm justify-end'>
-            <li className='mx-1 px-1 bg-gray-100 rounded'><Link href="./">Home</Link></li>
-            <li className='mx-1 px-1 bg-gray-100 rounded'><Link href="./Service">Service</Link></li>
-            <li className='mx-1 px-1 bg-gray-100 rounded'><Link href="./Work">Work</Link></li>
-            <li className='mx-1 px-1 bg-gray-100 rounded'><Link href="./About">About</Link></li>
+        <ul className='sm:hidden flex text-sm justify-end bg-white bg-opacity-75'>
+            <li className='mx-1 px-1 bg-gray-100 rounded'><Link href="/">Home</Link></li>
+            <li className='mx-1 px-1 bg-gray-100 rounded'><Link href="/Service">Service</Link></li>
+            <li className='mx-1 px-1 bg-gray-100 rounded'><Link href="/Work">Work</Link></li>
+            <li className='mx-1 px-1 bg-gray-100 rounded'><Link href="/About">About</Link></li>
         </ul>
     )
 }

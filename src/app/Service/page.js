@@ -10,11 +10,11 @@ const Service = () => {
         <div>
             <Header />
             <main className="mx-4 mt-2 md:mt-3 xl:mt-4">
-            <h2 className="text-center md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl md:mb-1 xl:mb-2 text-red-400 font-bold">◆Service</h2>
+            <h2 className="text-center md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl md:mb-1 xl:mb-2 text-red-400 font-bold">Service</h2>
               <Plans />
             </main>
             
-            <p className="mt-4 text-sm sm:text-xs md:text-sm xl:text-base 2xl:text-lg text-center font-bold">適宜その時の案件の数にもよりますが<br/>ショート1本5000円<br/>下記メールアドレスまでお気軽にご相談ください！<br/>都度相談になりますが最短1日〜一週間以内の納品になります。</p>
+            <p className="mt-4 text-sm sm:text-xs md:text-sm xl:text-base 2xl:text-lg text-center font-bold">適宜その時の案件の数にもよりますが<br/>ショート1本5000円<br/>下記メールアドレスまでお気軽にご相談ください！<br/>都度相談になりますが最短1日〜1週間以内の納品になります。</p>
             <Footer />
         </div>
     )

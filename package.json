@@ -11,6 +11,7 @@
   "dependencies": {
     "@next/third-parties": "^14.2.15",
     "canvas-confetti": "^1.9.3",
+    "html-react-parser": "^5.2.1",
     "microcms-js-sdk": "^3.1.2",
     "next": "^14.2.15",
     "react": "^18",
