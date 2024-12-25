@@ -46,7 +46,7 @@ const News = async () => {
         bg-red-100 p-2 md:p-4 xl:p-6
       `}>
         {posts.map((post, index) => {
-          return <li className="text-center text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl py-1 lg:py-2"><Link href={`/News/${post.id}`} className="hover:border-b-2 border-black border-b sm:border-b-0">{post.tittle}</Link></li>
+          return <li className="text-center text-xs md:text-sm lg:text-base xl:text-lg 2xl:text-xl py-1 lg:py-2"><Link href={`/News/${post.id}`} className="hover:border-b-2 border-black">{post.tittle}</Link></li>
         })}
       </ul>
     </section>
