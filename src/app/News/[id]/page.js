@@ -11,9 +11,6 @@ const GetNewsContent = async (id) => {
   .getListDetail({
     endpoint: 'news',
     contentId: `${id}`,
-    customRequestInit: {
-      cache: "no-store", // キャッシュを利用せずに常に新しいデータを取得する
-     },
   })
   return data
 

@@ -32,9 +32,6 @@ async function getNewsPosts() {
       fields: 'id,tittle',  // idとtitleを取得
       limit: 3,  // 最新の10件を取得
     },
-    customRequestInit: {
-      cache: "no-store", // キャッシュを利用せずに常に新しいデータを取得する
-     },
   });
   return data.contents;
 }
