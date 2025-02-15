@@ -14,7 +14,7 @@ const Service = () => {
               <Plans />
             </main>
             
-            <p className="mt-4 text-sm sm:text-xs md:text-sm xl:text-base 2xl:text-lg text-center font-bold">適宜その時の案件の数にもよりますが<br/>ショート1本5000円<br/>下記メールアドレスまでお気軽にご相談ください！<br/>都度相談になりますが最短1日〜1週間以内の納品になります。</p>
+            <p className="mt-4 text-sm sm:text-xs md:text-sm xl:text-base 2xl:text-lg text-center font-bold">適宜その時の案件の数にもよりますが<br/>ショート1本5000円<br/>ロング1本10000円にて納期を早めます。<br/>都度相談になりますが最短1日〜1週間以内の納品になります。<br/>下記メールアドレスまでお気軽にご相談ください！</p>
             <Footer />
         </div>
     )
